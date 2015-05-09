@@ -42,7 +42,7 @@ Adafruit_StepperMotor *Stepper2 = AFMS.getStepper(200, 2);
 
 #define SensorPin 0
 unsigned long int avgValue;
-const float offset = 0.23; //calibrage de la sonde
+const float offset = 0.26; //calibrage de la sonde
 int buf[10];
 int temp;
 float phValue;
