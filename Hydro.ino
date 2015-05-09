@@ -42,7 +42,7 @@ Adafruit_StepperMotor *Stepper2 = AFMS.getStepper(200, 2);
 
 #define SensorPin 0
 unsigned long int avgValue;
-const float offset = 0.26; //calibrage de la sonde
+const float offset = 0.23; //calibrage de la sonde
 int buf[10];
 int temp;
 float phValue;
@@ -564,6 +564,8 @@ void manage_pump() //allume et éteinds la pompe quand il faut
     Serial.println(pump_stop_time);
 
     Serial.println();
+
+    pump_start_time = EEPROMReadlong(EEPROM_POMPE);
 
     if (pump_last_time < pump_start_time) //en temps normal
     {
