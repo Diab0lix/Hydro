@@ -299,7 +299,7 @@ void loop()
     }
 
     /*
-    Si on est arrivé jusqu'ici, c'est que la position du joystick à changé.
+    Si on est arrivé jusqu'ici, c'est que la position du joystick a changé.
     Dans ce cas on remet la dernière valeure du joystick égale à la valeure actuelle.
     Ceci permet d'executer les actions que une seule fois quand le joystick change de position
     et permet de naviguer facilement dans le menu entier une case de menu à la fois.
@@ -736,7 +736,7 @@ long SoW(int DoW, int hour, int minute, int second) //Secondes dans la semaine
 }
 
 /*
-Cette fonction à été copiée du code qui se trouve sur eole pour calibrer la sonde pH.
+Cette fonction a été copiée du code qui se trouve sur eole pour calibrer la sonde pH.
 */
 
 void pH_value()
